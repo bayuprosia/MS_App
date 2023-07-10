@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Sep 15, 2021 at 09:46 AM
--- Server version: 10.1.48-MariaDB-0ubuntu0.18.04.1
--- PHP Version: 8.0.10
+-- Host: 127.0.0.1
+-- Generation Time: Jul 10, 2023 at 09:13 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `ams_native`
+-- Database: `ms_app`
 --
 
 -- --------------------------------------------------------
@@ -63,7 +63,7 @@ CREATE TABLE `tbl_instansi` (
 --
 
 INSERT INTO `tbl_instansi` (`id_instansi`, `institusi`, `nama`, `status`, `alamat`, `kepsek`, `nip`, `website`, `email`, `logo`, `id_user`) VALUES
-(1, 'Dinas Pendidikan Pemuda Dan Olahraga', 'SMK MasRud.com', 'Terakreditasi A', 'Sawahan, Nganjuk, Jawa Timur', 'Rudi', '-', 'https://masrud.com', 'email@masrud.com', 'logo.png', 1);
+(1, 'Dinas Pendidikan', 'SMPIT', 'Terakreditasi A', 'Depok', 'Ahmad', '-', 'https://smpit.com', 'email@smpit.com', 'logo.png', 1);
 
 -- --------------------------------------------------------
 
@@ -161,7 +161,7 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`id_user`, `username`, `password`, `nama`, `nip`, `admin`) VALUES
-(1, 'masrud', '7d05dc02abe9cda729d0c798c886db47', 'Rudi', '-', 1);
+(1, 'bayu.nur', '8a24367a1f46c141048752f2d5bbd14b', 'Bayu Nur Angga', '-', 1);
 
 --
 -- Indexes for dumped tables
